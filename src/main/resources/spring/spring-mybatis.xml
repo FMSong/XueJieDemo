@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD
+
+ Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <typeAliases>
+        <!--关联pojo类-->
+        <!--<typeAlias type="com.lanou.pojo.FUser.User" alias="user"/>-->
+        <!--pojo下所有类  类名为别名-->
+        <package name="com.lanou.pojo"/>
+    </typeAliases>
+
+    <mappers>
+        <mapper resource="mapper/prdMapper.xml"/>
+    </mappers>
+</configuration>
